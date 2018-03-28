@@ -1,10 +1,30 @@
 import React from "react";
 
 
-class Basket extends React.Component{
+class Baskets extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={}
+    }
+    componentWillReceiveProps(nextProps){
+        alert(nextProps.test);
+    }
+    
+    
     render(){
-    return <h1>Basket</h1>;
+        
+        return (
+            <div>
+                <h1>Basket</h1>
+                <ul>
+                    <li>Pizza1: </li>
+                    <li>Pizza2: </li>
+                    <li>Pizza3: </li>
+                </ul>
+       
+            </div>
+        );
     }
 }
 
-export default Basket;
+export default Baskets;
