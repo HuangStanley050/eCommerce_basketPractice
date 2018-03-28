@@ -63,7 +63,12 @@ class Products extends React.Component{
     }
     
     handleOrder(){
+        
         this.props.order(this.state.pizza1,this.state.pizza2,this.state.pizza3);
+        this.setState({pizza1:0,pizza2:0,pizza3:0});
+        pizza1_counter=0;
+        pizza2_counter=0;
+        pizza3_counter=0;
     }
     render(){
         
