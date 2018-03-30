@@ -107,7 +107,7 @@ class Products extends React.Component{
                         <span>number of pizzas:{pizza3_counter}</span>
                     </div>
                 </div>
-                <button onClick={this.handleOrder}style={{height:30, marginTop:30}}>Order</button>
+                <button onClick={this.handleOrder}style={{height:30, marginTop:30}}>Place your order</button>
             </div>
             );
     }
